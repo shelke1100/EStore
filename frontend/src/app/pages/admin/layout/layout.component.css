@@ -1,0 +1,448 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #ec5766;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+label.logo {
+    font-size:20px;
+    word-spacing: -1px;
+    color: rgb(218, 211, 211);
+    /* line-height: 80px; */
+ } 
+
+ input.search {
+    width: 600px;
+    height: 40px;
+    margin-left:30px;
+    margin-right: 0%;
+}
+
+nav button.btn
+{
+    width: 100px;
+    height: 40px;
+}
+
+nav button.btn:hover {
+    background: rgb(194, 58, 58);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 8px 20px;
+}
+
+nav ul li a:hover {
+    background: #a20c1b;
+}
+
+#checkbtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width: 895px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    label.logo {
+        margin: 2px;
+        font-size: 15   px;
+       
+    }
+
+    input.search, nav button.btn {
+        width: 100%;
+        height: 35px;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #a20c1b;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        margin: 10px 0;
+    }
+
+    #checkbtn {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+       
+    }
+
+    nav input.search {
+        width: 170%;
+        height: 35px;
+        /* margin-right: 8px; */
+     } 
+
+     nav button.btn {
+        width: 60%;
+        height: 35px;
+        margin-right: 10px;
+    }
+    #check:checked ~ ul {
+        display: flex;
+    } 
+} 
+
+/* .content {
+    width: 100%;
+    height: 400px;
+} */
+
+/* **************************** For footer */
+ footer .container {
+    background-color: black;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 100px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-col h4::before {
+    content: '';
+    width: 130px;
+    height: 2px;
+    position: absolute;
+    background-color: #e91e64;
+    bottom: -10px;
+}
+
+.footer-col ul li {
+    padding: 10px;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+}
+
+.footer-col input {
+    border: none;
+    width: 400px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+    border-radius: 5px;
+}
+
+.inputSubmit:hover {
+    background-color: green;
+}
+
+.col p {
+    color: white;
+}
+
+.row hr {
+    opacity: 0.7;
+}
+
+.row .socialIcons {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.row .socialIcons i:hover {
+    color: #e91e64;
+}
+
+@media(max-width: 895px) {
+    footer .row {
+        flex-direction: column;
+        padding: 20px 30px;
+        align-items: center;
+    }
+
+    footer .footer-col ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+ 
+    .footer-col input {
+        width: 100%;
+    } 
+
+}
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ 
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #ec5766;
+}
+label.logo{
+    font-size: 30px;
+    color: rgb(218, 211, 211);
+    margin: 10px 100px;
+    line-height: 80px;
+}
+input.search{
+    width: 300px;
+    height: 35px;
+}
+nav button.btn{ 
+    
+    width: 100px;
+    height: 35px;
+}
+nav button.btn:hover{
+    background: rgb(194, 58, 58);
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+
+
+}
+nav ul li a{
+
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 8px 20px; 
+
+}  
+nav ul li a:hover {
+    background: #a20c1b;
+}
+#checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size:  30px;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+   transition: .10s;
+
+}
+@media(max-width:895px)
+{
+   #checkbtn{
+    display: block;
+   }
+   nav ul{
+    width: 100%;
+    height: 100vh;
+    background: #a20c1b;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+   }
+   nav ul li{
+    display: block;
+    text-align: center; 
+    line-height: 40px;
+    margin:10px ;
+   }
+   label.logo{
+    font-size: 10px;
+   } 
+   input.search{
+    width: 70px;
+    height: 20px;
+   }
+   nav button.btn{ 
+     width: 15px;
+     height: 10px;
+   }
+}
+/* content*/
+
+/* .content{
+    width: 100%;
+    height: 400px;
+} */
+
+
+
+/* **************************** For footer  */
+ /* footer .container{
+    background-color: black;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.footer-col ul{
+    list-style-type: none;
+}
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family:'Ubuntu', sans-serif ;
+}
+.footer-col h4::before{
+    content: '';
+    width: 130px;
+    height: 2px;
+    position: absolute;
+    background-color: #e91e64;
+    bottom: -10px;
+
+}
+.footer-col ul li {
+    padding: 10px;
+}
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+}
+.footer-col ul li a:hover{
+    opacity:1;
+     
+}
+.footer-col input{
+    border: none;
+    width:400px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+    border-radius: 5px;
+}
+.inputSubmit:hover{
+    background-color: green;
+}
+.col p{
+    color: white
+}
+.row hr{
+    opacity: 0.7;
+}
+ 
+.row .socialIcons{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin: 0 20px;
+    transition: 0.5s;
+  }
+  
+ .row .socialIcons i:hover{
+    color:#e91e64
+ }
+ @media(max-width:895px)
+ {
+    footer .row{
+        flex-direction: column;
+        padding: 20px 30px;
+        align-items: center;
+
+    }
+    footer .footer-col ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-col input {
+        width: 100px;
+    } */
